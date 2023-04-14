@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+<p>Тривалість завантаження {{ time_to_load }}</p>
+<p>Час завантаження {{ download_time }}</p>
+<a href="{% url 'download_file' file_path=download_link %}">Посилання на скачування </a>
+<br>
+<br>
+<a href="/">Додому</a>
+{% endblock %}
